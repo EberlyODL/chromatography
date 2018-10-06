@@ -1,0 +1,325 @@
+body {
+  margin: 0;
+}
+
+/** Font Styles **/
+h1 {
+  margin: 0;
+  font-size: 2.1em;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.4em;
+}
+
+/** END Font Styles **/
+
+/** Top Bar **/
+
+#top_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.psu_logo {
+  width: 30%;
+}
+
+.psu_logo img {
+  width: 47%;
+}
+
+.availability_statement {
+  background-color: #1d407e;
+  color: #fff;
+  padding: 10px 20px 0;
+  height: 40px;
+  text-align: center;
+  font-weight: bold;
+  margin: 15px;
+}
+
+/** END Top Bar **/
+
+/** Header **/
+
+.header_image {
+  background: url("assets/images/restek_psu_header.png");
+  height: 400px;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  /* border-top: solid 5px #1d407e;
+  border-bottom: solid 5px #1d407e; */
+}
+
+#title_container {
+  display: flex;
+  justify-content: center;
+}
+
+#header_title_wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.header_title {
+  background-color: #1d407e;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 15px 40px;
+  position: absolute;
+  top: 440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1196px) {
+  .header_title {
+    width: 70%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 2px;
+  }
+}
+
+@media screen and (max-width: 907px) {
+  .header_title {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 632px) {
+  .header_title {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .header_title {
+    font-size: 12px;
+    margin-top: -15px;
+  }
+}
+
+.world_campus_logo {
+  background-color: #132940;
+  position: absolute;
+  padding: 15px;
+  top: 390px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 633px) {
+  .world_campus_logo {
+    display: none;
+  }
+}
+
+#header_info_wrap {
+  background-color: #0074c8;
+  padding: 55px 30px 40px;
+}
+
+#header_info_wrap p {
+  color: #fff;
+}
+
+@media screen and (max-width: 531px) {
+  .header_statement {
+    margin-top: -12px;
+  }
+}
+
+/** END Header **/
+
+/** Courses **/
+
+#course_wrap {
+  display: flex;
+  background-color: #e7e7e8;
+  border-bottom: solid 4px #fff;
+}
+
+@media screen and (max-width: 670px) {
+  #course_wrap {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 531px) {
+  #course_wrap {
+    border-bottom: solid 4px #fff;
+  }
+}
+
+#course {
+	width: 30%;
+	background-color: #1d407e;
+	display: flex;
+	align-items: center;
+}
+
+@media screen and (max-width: 1025px) {
+  #course {
+    width: 100%;
+  }
+}
+
+.course_number {
+	color: #fff;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 15px;
+}
+
+@media screen and (max-width: 531px) {
+  .course_number {
+    padding: 10px;
+    width: 20%;
+  }
+}
+
+.upper {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 531px) {
+  .upper {
+    font-size: 16px;
+  }
+}
+
+.lower {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 531px) {
+  .lower {
+    font-size: 30px !important;
+  }
+}
+
+.course_name {
+  background-color: #1d407e;
+  color: #fff;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1025px) {
+  .course_name {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .course_name {
+		padding: 10px;
+		float: right;
+  }
+}
+
+.course_name p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+  .course_name p {
+    font-size: 20px !important;
+  }
+}
+
+.course_description {
+  background-color: #e7e7e8;
+  width: 70%;
+  padding: 15px;
+}
+
+@media screen and (max-width: 1025px) {
+  .course_description {
+    width: 100%;
+  }
+}
+
+/** END Courses **/
+
+/** Promo Tiles **/
+
+#promo_tile_container {
+  display: flex;
+	justify-content: space-between;
+	margin-top: -4px;
+}
+
+@media screen and (max-width: 670px) {
+  #promo_tile_container {
+		flex-direction: column;
+		margin: 10px;
+  }
+}
+
+.tile {
+  background-color: #0074c8;
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 40px;
+	height: 250px;
+	margin-bottom: 10px;
+}
+
+.tile p {
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	border: solid 1px #fff;
+	padding: 10px;
+}
+
+@media screen and (max-width: 670px) {
+  .tile {
+		width: 100%;
+  }
+}
+
+/** END Promo Tiles **/
+
+/** Quote Section **/
+
+#quote_wrap {
+	background-color: #1d407e;
+	margin-top: -10px;
+}
+
+.quote {
+	padding: 35px;
+	text-align: center;
+}
+
+.quote p {
+	color: #fff;
+	font-size: 22px;
+}
+
+.quote_source {
+	color: #fff;
+	text-align: center;
+	font-style: italic;
+	padding-bottom: 25px;
+}
+
+/** END Quote Section **/
