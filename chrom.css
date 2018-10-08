@@ -163,10 +163,10 @@ p {
 }
 
 #course {
-	width: 30%;
-	background-color: #1d407e;
-	display: flex;
-	align-items: center;
+  width: 30%;
+  background-color: #1d407e;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 1025px) {
@@ -176,18 +176,17 @@ p {
 }
 
 .course_number {
-	color: #fff;
-	padding: 10px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-left: 15px;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15px;
 }
 
 @media screen and (max-width: 531px) {
   .course_number {
-    padding: 10px;
-    width: 20%;
+    padding: 0px;
   }
 }
 
@@ -227,8 +226,8 @@ p {
 
 @media screen and (max-width: 900px) {
   .course_name {
-		padding: 10px;
-		float: right;
+    padding: 10px;
+    float: right;
   }
 }
 
@@ -261,65 +260,191 @@ p {
 
 #promo_tile_container {
   display: flex;
-	justify-content: space-between;
-	margin-top: -4px;
+  align-items: center;
+  background-color: #0074c8;
+  margin-top: -4px;
+  padding: 30px 10px 30px;
 }
 
 @media screen and (max-width: 670px) {
   #promo_tile_container {
-		flex-direction: column;
-		margin: 10px;
+    flex-direction: column;
   }
 }
 
 .tile {
   background-color: #0074c8;
-  width: 33.33%;
+  width: 23vw;
+  height: 23vw;
   display: flex;
+  border: 2px solid white;
+  border-radius: 50%;
   justify-content: center;
-  padding: 40px 0 40px;
-	height: 250px;
-	margin-bottom: 10px;
-}
-
-.tile p {
-	color: #fff;
-	font-size: 20px;
-	font-weight: bold;
-	border: solid 1px #fff;
-	padding: 10px;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 10px 15px;
 }
 
 @media screen and (max-width: 670px) {
   .tile {
-		width: 100%;
+    width: 80vw;
+    height: 80vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
+
+
+.tile_title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.tile_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.tile_icon img {
+  width: 50%;
+}
+
 
 /** END Promo Tiles **/
 
 /** Quote Section **/
 
 #quote_wrap {
-	background-color: #1d407e;
-	margin-top: -10px;
+  background-color: #1d407e;
+  margin-top: -10px;
 }
 
 .quote {
-	padding: 35px;
-	text-align: center;
+  padding: 35px;
+  text-align: center;
 }
 
 .quote p {
-	color: #fff;
-	font-size: 22px;
+  color: #fff;
+  font-size: 22px;
 }
 
 .quote_source {
-	color: #fff;
-	text-align: center;
-	font-style: italic;
-	padding-bottom: 25px;
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 25px;
 }
 
 /** END Quote Section **/
+
+/** Footer **/
+
+#footer_wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 15px;
+}
+
+@media screen and (max-width: 730px) {
+  #footer_wrap {
+    flex-direction: column-reverse !important;
+  }
+}
+
+.footer_items {
+  margin: 5px 0 5px;
+  width: 33.33%;
+  align-items: center;
+  display: flex;
+}
+
+@media screen and (max-width: 730px) {
+  .footer_items {
+    width: 100%;
+  }
+}
+
+.partnership {
+  background-color: #e7e7e8;
+  text-align: center;
+  padding: 25px;
+}
+
+@media screen and (max-width: 730px) {
+  .partnership {
+    width: 100%;
+  }
+}
+
+.partnership a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.partnership a:hover {
+  color: #1d407e;
+}
+
+.ecos_logo img {
+  width: 60%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.restek_logo img {
+  width: 40%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/** END Footer **/
+
+/** Basement **/
+
+#basement {
+  background-color: #132940;
+}
+
+.legal_statement {
+  display: flex;
+  justify-content: center;
+}
+
+.legal_item {
+  padding: 25px 5px 25px 0;
+}
+
+.legal_item p:hover {
+  color: #0074c8;
+}
+
+@media screen and (max-width: 589px) {
+  .legal_item {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 589px) {
+  .legal_item p {
+    font-size: 11px !important;
+  }
+}
+
+.legal_item p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.legal_item a {
+  text-decoration: none;
+}
+/** END Basement **/
