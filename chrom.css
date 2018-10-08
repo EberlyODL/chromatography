@@ -266,7 +266,7 @@ p {
   padding: 30px 10px 30px;
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 887px) {
   #promo_tile_container {
     flex-direction: column;
   }
@@ -285,12 +285,19 @@ p {
   margin: 0 10px 15px;
 }
 
+@media screen and (max-width: 887px) {
+  .tile {
+    width: 60vw;
+    height: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (max-width: 670px) {
   .tile {
     width: 80vw;
     height: 80vw;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
