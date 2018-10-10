@@ -16,9 +16,9 @@ p {
   line-height: 1.4em;
 }
 
-/** END Font Styles **/
+/** /Font Styles **/
 
-/** Top Bar **/
+/** Top Bar Region **/
 
 #top_bar {
   display: flex;
@@ -44,9 +44,9 @@ p {
   margin: 15px;
 }
 
-/** END Top Bar **/
+/** /Top Bar Region**/
 
-/** Header **/
+/** Header Region **/
 
 .header_image {
   background: url("assets/images/restek_psu_header.png");
@@ -54,8 +54,6 @@ p {
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
-  /* border-top: solid 5px #1d407e;
-  border-bottom: solid 5px #1d407e; */
 }
 
 #title_container {
@@ -140,9 +138,9 @@ p {
   }
 }
 
-/** END Header **/
+/** /Header Region **/
 
-/** Courses **/
+/** Course Region **/
 
 #course_wrap {
   display: flex;
@@ -254,9 +252,9 @@ p {
   }
 }
 
-/** END Courses **/
+/** /Courses Region **/
 
-/** Promo Tiles **/
+/** Tile Region **/
 
 #promo_tile_container {
   display: flex;
@@ -357,9 +355,9 @@ p {
   text-align: center;
 }
 
-/** END Promo Tiles **/
+/** /Tile Region **/
 
-/** Quote Section **/
+/** Quote Region **/
 
 #quote_wrap {
   background-color: #1d407e;
@@ -383,9 +381,9 @@ p {
   padding-bottom: 25px;
 }
 
-/** END Quote Section **/
+/** /Quote Region **/
 
-/** Footer **/
+/** Footer Region **/
 
 #footer_wrap {
   display: flex;
@@ -448,9 +446,9 @@ p {
   margin-right: auto;
 }
 
-/** END Footer **/
+/** /Footer Region **/
 
-/** Basement **/
+/** Basement Region **/
 
 #basement {
   background-color: #132940;
@@ -490,4 +488,4 @@ p {
 .legal_item a {
   text-decoration: none;
 }
-/** END Basement **/
+/** /Basement Region **/
