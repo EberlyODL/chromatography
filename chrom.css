@@ -101,15 +101,14 @@ p {
 .world_campus_logo {
   background-color: #132940;
   position: absolute;
-  padding: 20px 60px 32px;
+  padding: 16px 60px 32px;
 }
 
 @media screen and (max-width: 700px) {
   .world_campus_logo {
-    padding: 0px 18px 35px;
+    padding: 0px 18px 40px;
   }
 }
-
 
 #header_info_wrap {
   background-color: #0074c8;
@@ -223,7 +222,6 @@ p {
   padding: 24px 20px;
 }
 
-
 .course_description p {
   font-size: 20px;
 }
@@ -278,13 +276,6 @@ p {
 .tile_title {
   display: flex;
   justify-content: center;
-  width: 33%;
-}
-
-@media screen and (max-width: 700px) {
-  .tile_title {
-    width: 100%;
-  }
 }
 
 .tile_title p {
@@ -295,10 +286,9 @@ p {
 
 @media screen and (max-width: 1024px) {
   .tile_title p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
-
 
 .tile_icon {
   display: flex;
@@ -321,6 +311,10 @@ p {
   align-items: center;
   opacity: 0;
   transition: all 0.3s ease-in-out;
+}
+
+.tile:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 887px) {
