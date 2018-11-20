@@ -6,12 +6,12 @@ body {
 h1 {
   margin: 0;
   font-size: 2.1em;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
 }
 
 p {
   margin: 0;
-  font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 1.4em;
 }
@@ -26,22 +26,36 @@ p {
   align-items: center;
 }
 
-.psu_logo {
-  width: 30%;
-}
-
-.psu_logo img {
-  width: 47%;
-}
-
 .availability_statement {
   background-color: #1d407e;
-  color: #fff;
-  padding: 10px 20px 0;
+  padding: 10px;
   height: 40px;
   text-align: center;
-  font-weight: bold;
   margin: 15px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .availability_statement {
+    padding: 10px;
+  }
+}
+
+.psu_logo {
+  margin-left: 15px;
+}
+
+.availability_statement p {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  .availability_statement p {
+    font-size: 16px;
+  }
 }
 
 /** /Top Bar Region**/
@@ -59,6 +73,7 @@ p {
 #title_container {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 }
 
 #header_title_wrap {
@@ -71,71 +86,46 @@ p {
   color: #fff;
   display: flex;
   justify-content: center;
+  align-self: center;
+  text-align: center;
   padding: 15px 40px;
   position: absolute;
-  top: 440px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-@media screen and (max-width: 1196px) {
-  .header_title {
-    width: 70%;
-    text-align: center;
-    padding: 10px;
-    margin-top: 2px;
-  }
-}
-
-@media screen and (max-width: 907px) {
-  .header_title {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 632px) {
-  .header_title {
-    font-size: 12px;
-    margin-top: 5px;
-  }
-}
-
-@media screen and (max-width: 457px) {
-  .header_title {
-    font-size: 12px;
-    margin-top: -15px;
+@media screen and (max-width: 700px) {
+  .header_title h1 {
+    font-size: 24px;
   }
 }
 
 .world_campus_logo {
   background-color: #132940;
   position: absolute;
-  padding: 15px;
-  top: 390px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
+  padding: 20px 60px 32px;
 }
 
-@media screen and (max-width: 633px) {
+@media screen and (max-width: 700px) {
   .world_campus_logo {
-    display: none;
+    padding: 0px 18px 35px;
   }
 }
+
 
 #header_info_wrap {
   background-color: #0074c8;
   padding: 55px 30px 40px;
 }
 
-#header_info_wrap p {
-  color: #fff;
+@media screen and (max-width: 700px) {
+  #header_info_wrap {
+    padding: 60px 30px 30px;
+  }
 }
 
-@media screen and (max-width: 531px) {
-  .header_statement {
-    margin-top: -12px;
-  }
+#header_info_wrap p {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
 }
 
 /** /Header Region **/
@@ -148,15 +138,9 @@ p {
   border-bottom: solid 4px #fff;
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 700px) {
   #course_wrap {
     flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 531px) {
-  #course_wrap {
-    border-bottom: solid 4px #fff;
   }
 }
 
@@ -182,29 +166,26 @@ p {
   margin-left: 15px;
 }
 
-@media screen and (max-width: 531px) {
-  .course_number {
-    padding: 10px;
-  }
-}
-
 .upper {
-  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+  font-size: 23px;
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 531px) {
+@media screen and (max-width: 700px) {
   .upper {
     font-size: 16px;
   }
 }
 
 .lower {
-  font-size: 36px;
+  font-family: "Roboto Slab", serif;
+  font-size: 48px;
   font-weight: bold;
+  margin-top: -10px;
 }
 
-@media screen and (max-width: 531px) {
+@media screen and (max-width: 700px) {
   .lower {
     font-size: 30px !important;
   }
@@ -216,13 +197,7 @@ p {
   padding: 20px;
 }
 
-@media screen and (max-width: 1025px) {
-  .course_name {
-    width: 75%;
-  }
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   .course_name {
     padding: 10px;
     float: right;
@@ -230,26 +205,27 @@ p {
 }
 
 .course_name p {
-  font-size: 22px;
-  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  font-size: 26px;
+  font-weight: 300;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   .course_name p {
     font-size: 20px !important;
   }
 }
 
 .course_description {
+  font-family: "Lato", sans-serif;
   background-color: #e7e7e8;
   width: 70%;
-  padding: 15px;
+  padding: 24px 20px;
 }
 
-@media screen and (max-width: 1025px) {
-  .course_description {
-    width: 100%;
-  }
+
+.course_description p {
+  font-size: 20px;
 }
 
 /** /Courses Region **/
@@ -264,7 +240,7 @@ p {
   padding: 30px 10px 30px;
 }
 
-@media screen and (max-width: 887px) {
+@media screen and (max-width: 700px) {
   #promo_tile_container {
     flex-direction: column;
   }
@@ -300,16 +276,35 @@ p {
 }
 
 .tile_title {
-  color: #fff;
-  font-weight: bold;
-  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 33%;
 }
+
+@media screen and (max-width: 700px) {
+  .tile_title {
+    width: 100%;
+  }
+}
+
+.tile_title p {
+  color: #fff;
+  font-family: "Roboto Slab", serif;
+  font-size: 28px;
+}
+
+@media screen and (max-width: 1024px) {
+  .tile_title p {
+    font-size: 20px;
+  }
+}
+
 
 .tile_icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 .tile_icon img {
@@ -325,7 +320,7 @@ p {
   display: flex;
   align-items: center;
   opacity: 0;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 887px) {
@@ -349,6 +344,7 @@ p {
 }
 
 .tile_info p {
+  font-family: "Roboto Slab", serif;
   width: 84%;
   margin-left: auto;
   margin-right: auto;
@@ -365,20 +361,46 @@ p {
 }
 
 .quote {
-  padding: 35px;
+  padding: 30px 0 20px;
   text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .quote  {
+    padding: 18px 10px;
+  }
 }
 
 .quote p {
+  font-family: "Roboto Slab", serif;
   color: #fff;
-  font-size: 22px;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 700px) {
+  .quote p {
+    font-size: 16px;
+  }
 }
 
 .quote_source {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
   color: #fff;
   text-align: center;
-  font-style: italic;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  .quote_source  {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .quote_source p {
+    font-size: 14px;
+  }
 }
 
 /** /Quote Region **/
@@ -391,9 +413,9 @@ p {
   padding: 15px 0 15px;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 700px) {
   #footer_wrap {
-    flex-direction: column-reverse !important;
+    flex-direction: column-reverse;
   }
 }
 
@@ -402,11 +424,13 @@ p {
   width: 33.33%;
   align-items: center;
   display: flex;
+  justify-content: center;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 700px) {
   .footer_items {
     width: 100%;
+    padding-bottom: 10px;
   }
 }
 
@@ -416,16 +440,20 @@ p {
   padding: 25px;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 700px) {
   .partnership {
     width: 100%;
   }
 }
 
-.partnership a {
-  font-weight: bold;
-  text-decoration: none;
+.partnership p {
   color: #000;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+.partnership a {
+  text-decoration: none;
 }
 
 .partnership a:hover {
@@ -463,26 +491,27 @@ p {
   padding: 25px 5px 25px 0;
 }
 
+@media screen and (max-width: 700px) {
+  .legal_item  {
+    padding: 25px 0 25px;
+  }
+}
+
 .legal_item p:hover {
   color: #0074c8;
 }
 
-@media screen and (max-width: 589px) {
-  .legal_item {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 589px) {
+@media screen and (max-width: 700px) {
   .legal_item p {
     font-size: 11px !important;
   }
 }
 
 .legal_item p {
-  font-size: 14px;
   color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .legal_item a {
