@@ -101,7 +101,7 @@ p {
 .world_campus_logo {
   background-color: #132940;
   position: absolute;
-  padding: 16px 60px 32px;
+  padding: 16px 45px 32px;
 }
 
 @media screen and (max-width: 700px) {
