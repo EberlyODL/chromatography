@@ -226,6 +226,12 @@ p {
   font-size: 20px;
 }
 
+@media screen and (max-width: 700px) {
+  .course_description {
+    padding: 24px 20px 24px 30px;
+  }
+}
+
 /** /Courses Region **/
 
 /** Tile Region **/
@@ -361,7 +367,7 @@ p {
 
 @media screen and (max-width: 700px) {
   .quote  {
-    padding: 18px 10px;
+    padding: 18px 11px;
   }
 }
 
