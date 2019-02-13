@@ -82,7 +82,7 @@ p {
 }
 
 .header_title {
-  background-color: #1d407e;
+  background-color: #132940;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -99,7 +99,7 @@ p {
 }
 
 .world_campus_logo {
-  background-color: #132940;
+  background-color: #1d407e;
   position: absolute;
   padding: 16px 45px 32px;
 }
